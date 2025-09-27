@@ -172,7 +172,7 @@ jobs:
       run: |
         echo "应用 ${{ env.APP_NAME }} 启动失败。"
         echo "妈的部署失败... 早上八点来部署肯定他妈的可以"
-        cf delete ${{ env.APP_NAME }} -f -r
+        # cf delete ${{ env.APP_NAME }} -f -r
         echo "应用 ${{ env.APP_NAME }} 已成功删除。"
     
     - name: 详细部署信息
